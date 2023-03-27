@@ -36,16 +36,16 @@ function timer(){
     } else if(m.value != 0 && s.value == 0){
         s.value = 59;
         m.value--;
-      
-              if (m.value == 1 &&  h.value == 0 && s.value == 0) {
-            // Display the text when there is 1 minute left
-            var h1 = document.getElementsByTagName('h1')[0];
-            h1.innerHTML = "1 minute left - Time to wind down your share";
-        }
+
     } else if(h.value != 0 && m.value == 0){
         m.value = 60;
         h.value--;
     }
+        
+              if (m.value == 1 && s.value == 0) {
+            // Display the text when there is 1 minute left
+document.getElementById("message").innerHTML = "You have one minute left! Time to wind down the share";
+        }
     return;
 }
 
