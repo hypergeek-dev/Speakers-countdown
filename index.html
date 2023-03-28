@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Speakers countdown</title>
-</head>
-<body>
+    <title>Speakers Countdown timer</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    
     <h1>Countdown Timer</h1>
     <div id="container">
-        <p id="hours" class="label">Hours</p><p id="minutes" class="label">Minutes</p><p id="seconds" class="label">Seconds</p>
-        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-        <button id="start" class="btn">Start</button>
-        <button id="reset" class="btn">Reset</button>
+      <div class="time-group">
+        <p id="hours" class="label">Hours</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time">
+      </div>
+      <p id="p1" class="semicolon">:</p>
+      <div class="time-group">
+        <p id="minutes" class="label">Minutes</p>
+        <input id="minute" type="number" max="60" min="0" value="0" class="time">
+      </div>
+      <p id="p2" class="semicolon">:</p>
+      <div class="time-group">
+        <p id="seconds" class="label">Seconds</p>
+        <input id="sec" type="number" max="60" min="0" value="0" class="time">
+      </div>
+      <button id="start" class="btn">Start</button>
+      <button id="reset" class="btn">Reset</button>
+    <p id="message"></p>
     </div>
-    <script src="timer.js"></script>
+    
+    
+    
+<script type="text/javascript" src="/timer.js"></script>
 </body>
 </html>
+
+
+
