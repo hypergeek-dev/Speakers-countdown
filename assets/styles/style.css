@@ -1,101 +1,101 @@
 body {
-    background-color: blue;
-  }
-  
-  * {font-family: 'Days One', sans-serif;
+  background-color: blue;
+}
+
+* {
+  font-family: 'Days One', sans-serif;
   font-weight: lighter;
-  color: white;}
-  
-  h1 {text-align:center;
-  font-size:98px;}
-  
-  
-  /* Center the container */
-  #container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  /* Style the labels */
-  .label {
-    font-size: 2rem;
-    margin: 0 0.5rem;
-  }
-  
-  /* Style the input fields */
-  .time {
-    font-size: 2rem;
-    padding: 0.5rem;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: black;
-  }
-  
-  /* Style the semicolons */
-  .semicolon {
-    font-size: 2rem;
-    margin: 0 0.5rem;
-  }
-  
-  /* Style the buttons */
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8vw;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80%; 
+}
+.label {
+  font-size: 2.5vw; 
+  margin: 0 1vw; 
+}
+
+
+.time {
+  font-size: 2.5vw; 
+  padding: 1vw; 
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+}
+
+
+.semicolon {
+  font-size: 2.5vw; 
+  margin: 0 1vw;
+}
+
+
+.btn {
+  font-size: 2.5vw; 
+  padding: 1vw 2vw;
+  margin-top: 2vw;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
   .btn {
-    font-size: 2rem;
+    font-size: 2vw;
     padding: 0.5rem 1rem;
     margin-top: 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
   }
-  
-  /* Make the buttons responsive */
-  @media only screen and (max-width: 600px) {
-    .btn {
-      font-size: 1.5rem;
-    }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .label {
+    font-size: 3vw;
+    margin: 0 0.5rem;
   }
-  
-  /* Make the labels and inputs responsive */
-  @media only screen and (max-width: 400px) {
-    .label {
-      font-size: 1.5rem;
-      margin: 0 0.25rem;
-    }
-    .time {
-      font-size: 1.5rem;
-      padding: 0.25rem;
-    }
+  .time {
+    font-size: 3vw;
+    padding: 0.5rem;
   }
-  
-  /* Flexbox for aligning labels and inputs */
-  #container > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-  }
-  
-  /* Flexbox for aligning the labels and input fields */
-  .time-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem;
-  }
-  
-  #message {
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    background-color: #fff;
-    z-index: 9999;
-    font-size:72px;
+}
+
+
+#container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw; 
+}
+
+
+.time-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw; 
+}
+
+#message {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
   }
