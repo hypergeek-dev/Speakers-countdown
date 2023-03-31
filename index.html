@@ -10,11 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-
-  <h1>Countdown Timer</h1>
+<header>
+  <h1>Speakers Countdown Timer</h1>
+  <h4>Enjoy your online meetings with confidence, knowing that you are staying on time and on task!</h4>
+</header>
 <div id="message"></div>
   <div id="container">
   
@@ -31,12 +34,13 @@
     <div class="time-group">
       <p id="seconds" class="label">Seconds</p>
       <input id="sec" type="number" max="59" min="0" value="0" class="time">
-    </div>
-    <button class="btn" id="mute">Mute</button>
-    <button class="btn" id="start">Start</button>
-    <button class="btn" id="pause">Pause</button>
-    <button class="btn" id="reset">Reset</button>
- 
+    </div></div>
+   <div id="btn-grp">
+    <button class="btn" id="start"><i class="fas fa-play"></i></button>
+    <button class="btn" id="pause"><i class="fas fa-pause"></i></button>
+    <button class="btn" id="reset"><i class="fas fa-redo"></i></button>
+    <button class="btn" id="mute"><i class="fas fa-volume-mute"></i></button>
+  </div>
   <script type="text/javascript" src="./assets/js/timer.js"></script>
 </body>
 
