@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Speakers Countdown timer</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Speakers Countdown timer</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
 
-    
-    <h1>Countdown Timer</h1>
-    <div id="container">
-      <div class="time-group">
-        <p id="hours" class="label">Hours</p>
-        <input id="hour" type="number" max="99" min="0" value="0" class="time">
-      </div>
-      <p id="p1" class="semicolon">:</p>
-      <div class="time-group">
-        <p id="minutes" class="label">Minutes</p>
-        <input id="minute" type="number" max="59" min="0" value="0" class="time">
-      </div>
-      <p id="p2" class="semicolon">:</p>
-      <div class="time-group">
-        <p id="seconds" class="label">Seconds</p>
-        <input id="sec" type="number" max="59" min="0" value="0" class="time">
-      </div>
-      <button id="start" class="btn">Start</button>
-      <button id="reset" class="btn">Reset</button>
-    <p id="message"></p>
+<body>
+
+  <h1>Countdown Timer</h1>
+<div id="message"></div>
+  <div id="container">
+  
+    <div class="time-group">
+      <p id="hours" class="label">Hours</p>
+      <input id="hour" type="number" max="99" min="0" value="0" class="time">
     </div>
-    
-    
-    
-<script type="text/javascript" src="./assets/js/timer.js"></script>
+    <p id="p1" class="semicolon">:</p>
+    <div class="time-group">
+      <p id="minutes" class="label">Minutes</p>
+      <input id="minute" type="number" max="59" min="0" value="0" class="time">
+    </div>
+    <p id="p2" class="semicolon">:</p>
+    <div class="time-group">
+      <p id="seconds" class="label">Seconds</p>
+      <input id="sec" type="number" max="59" min="0" value="0" class="time">
+    </div>
+    <button class="btn" id="start">Start</button>
+    <button class="btn" id="pause">Pause</button>
+    <button class="btn" id="reset">Reset</button>
+ 
+  <script type="text/javascript" src="./assets/js/timer.js"></script>
 </body>
+
 </html>
-
-
-
