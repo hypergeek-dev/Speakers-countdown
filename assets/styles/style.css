@@ -11,6 +11,7 @@ body {
 h1 {
   text-align: center;
   font-size: 8vw;
+  -webkit-text-stroke: 2px #000000;
 }
 #message {
   display: flex;
@@ -56,7 +57,6 @@ color:red;
   margin: 0 1vw;
 }
 
-
 .time {
   font-size: 2.5vw;
   padding: 1vw;
@@ -66,12 +66,10 @@ color:red;
   color: black;
 }
 
-
 .semicolon {
   font-size: 2.5vw;
   margin: 0 1vw;
 }
-
 
 .btn {
   font-size: 2.5vw;
