@@ -1,7 +1,7 @@
 var start = document.getElementById('start');
 var pause = document.getElementById('pause');
 var reset = document.getElementById('reset');
-var mute = document.getElementById('mute'); // new mute button
+var mute = document.getElementById('mute');
 var h = document.getElementById("hour");
 var m = document.getElementById("minute");
 var s = document.getElementById("sec");
@@ -10,7 +10,7 @@ var isTimerRunning = false;
 var lastInputH = 0;
 var lastInputM = 0;
 var lastInputS = 0;
-var isSoundOn = true; // new variable for mute button
+var isSoundOn = true;
 
 start.addEventListener('click', function() {
   lastInputH = h.value;
@@ -42,8 +42,12 @@ reset.addEventListener('click', function() {
   message.innerHTML = "";
 });
 
-mute.addEventListener('click', function() { // new event listener for mute button
+mute.addEventListener('click', function() {
   isSoundOn = !isSoundOn;
+  
+  var icon = mute.querySelector('i'); // get the icon element
+  icon.classList.toggle('fa-volume-up'); // toggle the icon class
+  icon.classList.toggle('fa-volume-mute');
 });
 
 function startInterval() {
@@ -77,7 +81,7 @@ function timer() {
     var message = document.getElementById('message');
     message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
     
-    if (isSoundOn) { // check if the sound is on
+    if (isSoundOn) {
       var audio = new Audio('./assets/audio/notification.mp3');
       audio.play();
     }
