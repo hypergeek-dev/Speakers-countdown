@@ -1,8 +1,5 @@
 body {
-  background-color: blue;
-}
-
-* {
+  background-color: #0a0a0a;
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
@@ -18,12 +15,11 @@ h1 {
   text-align: center;
   font-size: 6vw;
   -webkit-text-stroke: 2px #000000;
-
 }
 
 h2 {
   font-size: 4rem;
-  color:yellow;
+  color: #ffc107;
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 }
@@ -38,12 +34,11 @@ h4 {
   align-self: center;
   text-align: center;
   margin: 1vw;
-
 }
 
 span {
-font-size: 2rem;
-color:red;
+  font-size: 2rem;
+  color: red;
 }
 
 @-webkit-keyframes glow {
@@ -52,7 +47,7 @@ color:red;
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px greenyellow, 0 0 40px greenyellow, 0 0 50px greenyellow, 0 0 60px greenyellow, 0 0 70px greenyellow, 0 0 80px greenyellow;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffc107, 0 0 40px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107, 0 0 70px #ffc107, 0 0 80px #ffc107;
   }
 }
 
@@ -83,20 +78,38 @@ color:red;
   align-self: center;
 }
 
-
-#btn-grp{
+.time-group {
   display: flex;
-  align-items:center;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+}
 
+#btn-grp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .btn {
-
   font-size: 2.5vw;
   padding: 1vw 2vw;
   margin-top: 2vw;
+  margin-left: 0.25vw;
   background-color: #4CAF50;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #3E8E41;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -107,7 +120,6 @@ color:red;
     margin-top: 1rem;
   }
 }
-
 
 @media only screen and (max-width: 400px) {
   .label {
@@ -121,13 +133,13 @@ color:red;
   }
 }
 
-
 #container>* {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1vw;
 }
+
 
 
 .time-group {
