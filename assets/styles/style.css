@@ -2,10 +2,9 @@ body {
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
-  background-image: url("assets/images/carbonfiber.webp");
+  background-image: url("/assets/images/carbonfiber.webp");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat;  
 }
 
 header {
