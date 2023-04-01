@@ -1,4 +1,4 @@
-var start = document.getElementById('start');
+document.getElementById('start');
 var pause = document.getElementById('pause');
 var reset = document.getElementById('reset');
 var mute = document.getElementById('mute');
@@ -67,6 +67,16 @@ function timer() {
     s.value = 0;
     stopInterval();
     isTimerRunning = false;
+
+    // Play notification sound
+    if (isSoundOn) {
+      var audio = new Audio('./assets/audio/timeisup.mp3');
+      audio.play();
+    }
+
+    // Show message
+    var message = document.getElementById('message');
+    message.innerHTML = "<h2>Time is up!</h2>";
   } else if (s.value != 0) {
     s.value--;
   } else if (m.value != 0 && s.value == 0) {
@@ -82,9 +92,8 @@ function timer() {
     message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
     
     if (isSoundOn) {
-      var audio = new Audio('./assets/audio/notification.mp3');
+      var audio = new Audio('./assets/audio/1-min.mp3');
       audio.play();
     }
   }
-  return;
 }

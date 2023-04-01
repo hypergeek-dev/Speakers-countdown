@@ -80,8 +80,9 @@ color:red;
 
 .semicolon {
   font-size: 2.5vw;
-  margin: 0 1vw;
+  align-self: center;
 }
+
 
 #btn-grp{
   display: flex;
@@ -131,7 +132,7 @@ color:red;
 
 .time-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
