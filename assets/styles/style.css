@@ -11,6 +11,9 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* set the background color with alpha value */
+  backdrop-filter: blur(1px); /* add blur effect to the background */
+  padding: 20px; /* add some padding to the header */
 }
 
 h1 {
@@ -80,13 +83,14 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 0.5vw;
+  margin-right: 1vw;
   margin-left: 0.5vw;
   font-size: larger;
 }
 
 .time {
   font-size: 2.5vw;
+  font-weight: 300;
   padding: 1vw;
   text-align: center;
   border: 1px solid #ccc;
@@ -113,24 +117,29 @@ span {
   
 }
 
+
+
 .btn {
-  font-size: 2.5vw;
-  padding: 1vw 2vw;
-  margin-top: 2vw;
-  margin-left: 0.25vw;
-  background-image: url("/assets/images/alu.webp");
-  border-radius: 0.5rem;
-  color: #fff;
+  font-size: 3.5vw;
+  margin: 12px;
+  height: 7vh;
+  width: 7vw;
+  border-radius: 10px;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 2px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  font-family: 'Damion', cursive;
   border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
 }
 
-.btn:hover {
-  background-color: #3E8E41;
-  transform: scale(1.05);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+button:hover {
+  box-shadow: -2px -2px 4px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
 }
 
 
