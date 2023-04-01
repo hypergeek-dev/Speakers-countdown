@@ -17,6 +17,7 @@ h1 {
   text-align: center;
   font-size: 6vw;
   -webkit-text-stroke: 2px #000000;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -25,11 +26,11 @@ h2 {
   text-align: center;
   animation: glow 1s ease-in-out infinite alternate;
 
+
 }
 
 h4 {
   margin: 0;
-  font-size: larger;
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 black;
   letter-spacing: 0.2vw;
 }
@@ -63,6 +64,8 @@ span {
   align-items: center;
   justify-content: center;
   height: 80%;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 black;
+
 }
 
 .time-group {
@@ -115,7 +118,7 @@ span {
   padding: 1vw 2vw;
   margin-top: 2vw;
   margin-left: 0.25vw;
-  background-color: #4CAF50;
+  background-image: url("/assets/images/alu.webp");
   border-radius: 0.5rem;
   color: #fff;
   border: none;
