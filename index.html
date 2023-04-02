@@ -10,38 +10,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-<header>
-  <h1>Speakers Timer</h1>
-  <h4>Manage multiple speakers, on point and with notification</h4>
-</header>
-<div id="message"></div>
-<div id="container">
-  <div class="time-group">
-    <div class="time-label">
-      <p id="hours" class="label">Hours</p>
-      <input id="hour" type="number" max="99" min="0" value="0" class="time">
+  <header>
+    <h1>Speakers Timer</h1>
+    <h4>Manage multiple speakers, on point and with notification</h4>
+  </header>
+  <div id="message"></div>
+  <div id="container">
+    <div class="time-group">
+      <div class="time-label">
+        <p id="hours" class="label">Hours</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time">
+      </div>
+    </div>
+    <p id="p1" class="semicolon">:</p>
+    <div class="time-group">
+      <div class="time-label">
+        <p id="minutes" class="label">Minutes</p>
+        <input id="minute" type="number" max="59" min="0" value="0" class="time">
+      </div>
+    </div>
+    <p id="p2" class="semicolon">:</p>
+    <div class="time-group">
+      <div class="time-label">
+        <p id="seconds" class="label">Seconds</p>
+        <input id="sec" type="number" max="59" min="0" value="0" class="time">
+      </div>
     </div>
   </div>
-  <p id="p1" class="semicolon">:</p>
-  <div class="time-group">
-    <div class="time-label">
-      <p id="minutes" class="label">Minutes</p>
-      <input id="minute" type="number" max="59" min="0" value="0" class="time">
-    </div>
-  </div>
-  <p id="p2" class="semicolon">:</p>
-  <div class="time-group">
-    <div class="time-label">
-      <p id="seconds" class="label">Seconds</p>
-      <input id="sec" type="number" max="59" min="0" value="0" class="time">
-    </div>
-  </div>
-</div>
-   <div id="btn-grp">
+  <div id="btn-grp">
     <button class="btn" id="start"><i class="fas fa-play"></i></button>
     <button class="btn" id="pause"><i class="fas fa-pause"></i></button>
     <button class="btn" id="reset"><i class="fas fa-redo"></i></button>
