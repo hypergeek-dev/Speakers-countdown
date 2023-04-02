@@ -166,7 +166,33 @@ padding-top: 12vh;
     border: none;
     color: rgb(161, 161, 161);
     transition: 500ms;
-  } }
+  } 
+  span {
+font-size: 1rem;
+  color:red;
+  -webkit-text-stroke:0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  margin: 0px;
+}
+  h2 {
+  font-size: 1.5rem;
+      color: rgb(255, 193, 7);
+      text-align: center;
+      animation: 1s ease-in-out 0s infinite alternate none running glow;
+    }
+
+  h4 {
+      margin: 0px;
+      text-shadow: rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px, black 1px 1px 0px;
+  
+  color: rgb(134, 134, 134);}
+}
+
 
 @media (min-width: 400px) {
   .label {
