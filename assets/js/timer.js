@@ -13,7 +13,7 @@ let lastInputMinute = 0;
 let lastInputSecond = 0;
 let isSoundOn = true;
 
-startButton.addEventListener('click', function() {
+startButton.addEventListener('click', function () {
   // Check if timer is already at 0:0:0
   if (hourInput.value == 0 && minuteInput.value == 0 && secondInput.value == 0) {
     return;
@@ -29,14 +29,14 @@ startButton.addEventListener('click', function() {
   }
 });
 
-pauseButton.addEventListener('click', function() {
+pauseButton.addEventListener('click', function () {
   if (isTimerRunning) {
     stopInterval();
     isTimerRunning = false;
   }
 });
 
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener('click', function () {
   hourInput.value = lastInputHour;
   minuteInput.value = lastInputMinute;
   secondInput.value = lastInputSecond;
@@ -48,16 +48,16 @@ resetButton.addEventListener('click', function() {
   message.innerHTML = "";
 });
 
-muteButton.addEventListener('click', function() {
+muteButton.addEventListener('click', function () {
   isSoundOn = !isSoundOn;
-  
+
   var icon = muteButton.querySelector('i'); // get the icon element
   icon.classList.toggle('fa-volume-up'); // toggle the icon class
   icon.classList.toggle('fa-volume-mute');
 });
 
 function startInterval() {
-  startTimer = setInterval(function() {
+  startTimer = setInterval(function () {
     timer();
   }, 1000);
 }
@@ -96,7 +96,7 @@ function timer() {
   if (minuteInput.value == 1 && secondInput.value == 0) {
     var message = document.getElementById('message');
     message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
-    
+
     if (isSoundOn) {
       var audio = new Audio('./assets/audio/1-min.mp3');
       audio.play();
