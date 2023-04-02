@@ -15,7 +15,8 @@ let isSoundOn = true;
 
 startButton.addEventListener('click', function () {
   // Check if timer is already at 0:0:0
-  if (hourInput.value == 0 && minuteInput.value == 0 && secondInput.value == 0) {
+  if (hourInput.value === 0 && minuteInput.value === 0 &&
+    secondInput.value === 0) {
     return;
   }
 
@@ -44,14 +45,14 @@ resetButton.addEventListener('click', function () {
   stopInterval();
   isTimerRunning = false;
 
-  var message = document.getElementById('message');
+  let message = document.getElementById('message');
   message.innerHTML = "";
 });
 
 muteButton.addEventListener('click', function () {
   isSoundOn = !isSoundOn;
 
-  var icon = muteButton.querySelector('i'); // get the icon element
+  let icon = muteButton.querySelector('i'); // get the icon element
   icon.classList.toggle('fa-volume-up'); // toggle the icon class
   icon.classList.toggle('fa-volume-mute');
 });
@@ -67,7 +68,7 @@ function stopInterval() {
 }
 
 function timer() {
-  if (hourInput.value == 0 && minuteInput.value == 0 && secondInput.value == 0) {
+  if (hourInput.value === 0 && minuteInput.value === 0 && secondInput.value === 0) {
     hourInput.value = 0;
     minuteInput.value = 0;
     secondInput.value = 0;
@@ -76,25 +77,25 @@ function timer() {
 
     // Play notification sound
     if (isSoundOn) {
-      var audio = new Audio('./assets/audio/timeisup.mp3');
+      let audio = new Audio('./assets/audio/timeisup.mp3');
       audio.play();
     }
 
     // Show message
-    var message = document.getElementById('message');
+    let message = document.getElementById('message');
     message.innerHTML = "<h2>Time is up!</h2>";
-  } else if (secondInput.value != 0) {
+  } else if (secondInput.value !== 0) {
     secondInput.value--;
-  } else if (minuteInput.value != 0 && secondInput.value == 0) {
+  } else if (minuteInput.value !== 0 && secondInput.value == 0) {
     secondInput.value = 59;
     minuteInput.value--;
-  } else if (hourInput.value != 0 && minuteInput.value == 0) {
+  } else if (hourInput.value !== 0 && minuteInput.value == 0) {
     minuteInput.value = 60;
     hourInput.value--;
   }
 
   if (minuteInput.value == 1 && secondInput.value == 0) {
-    var message = document.getElementById('message');
+    let message = document.getElementById('message');
     message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
 
     if (isSoundOn) {
