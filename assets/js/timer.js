@@ -1,21 +1,27 @@
-const startButton = document.getElementById('start');
-const pauseButton = document.getElementById('pause');
-const resetButton = document.getElementById('reset');
-const muteButton = document.getElementById('mute');
+
 const hourInput = document.getElementById("hour");
 const minuteInput = document.getElementById("minute");
+const muteButton = document.getElementById("mute");
+const pauseButton = document.getElementById("pause");
+const resetButton = document.getElementById("reset");
 const secondInput = document.getElementById("sec");
+const startButton = document.getElementById("start");
 
-let startTimer = null;
+let audio = new Audio("./assets/audio/1-min.mp3");
+let icon = muteButton.querySelector("i"); // get the icon element
+
+let isSoundOn = true;
 let isTimerRunning = false;
 let lastInputHour = 0;
 let lastInputMinute = 0;
 let lastInputSecond = 0;
-let isSoundOn = true;
+let message = document.getElementById("message");
+let startTimer = null;
 
-startButton.addEventListener('click', function() {
+startButton.addEventListener("click", function () {
   // Check if timer is already at 0:0:0
-  if (hourInput.value == 0 && minuteInput.value == 0 && secondInput.value == 0) {
+  if (hourInput.value === "0" && minuteInput.value === "0" &&
+    secondInput.value === "0") {
     return;
   }
 
@@ -29,14 +35,14 @@ startButton.addEventListener('click', function() {
   }
 });
 
-pauseButton.addEventListener('click', function() {
+pauseButton.addEventListener("click", function () {
   if (isTimerRunning) {
     stopInterval();
     isTimerRunning = false;
   }
 });
 
-resetButton.addEventListener('click', function() {
+resetButton.addEventListener("click", function () {
   hourInput.value = lastInputHour;
   minuteInput.value = lastInputMinute;
   secondInput.value = lastInputSecond;
@@ -44,20 +50,18 @@ resetButton.addEventListener('click', function() {
   stopInterval();
   isTimerRunning = false;
 
-  var message = document.getElementById('message');
   message.innerHTML = "";
 });
 
-muteButton.addEventListener('click', function() {
+muteButton.addEventListener("click", function () {
   isSoundOn = !isSoundOn;
-  
-  var icon = muteButton.querySelector('i'); // get the icon element
-  icon.classList.toggle('fa-volume-up'); // toggle the icon class
-  icon.classList.toggle('fa-volume-mute');
+
+  icon.classList.toggle("fa-volume-up"); // toggle the icon class
+  icon.classList.toggle("fa-volume-mute");
 });
 
 function startInterval() {
-  startTimer = setInterval(function() {
+  startTimer = setInterval(function () {
     timer();
   }, 1000);
 }
@@ -67,38 +71,38 @@ function stopInterval() {
 }
 
 function timer() {
-  if (hourInput.value == 0 && minuteInput.value == 0 && secondInput.value == 0) {
-    hourInput.value = 0;
-    minuteInput.value = 0;
-    secondInput.value = 0;
+  if (hourInput.value === "0" && minuteInput.value === "0" &&
+    secondInput.value === "0") {
+    hourInput.value = "0";
+    minuteInput.value = "0";
+    secondInput.value = "0";
     stopInterval();
     isTimerRunning = false;
 
     // Play notification sound
     if (isSoundOn) {
-      var audio = new Audio('./assets/audio/timeisup.mp3');
       audio.play();
     }
 
     // Show message
-    var message = document.getElementById('message');
+
     message.innerHTML = "<h2>Time is up!</h2>";
-  } else if (secondInput.value != 0) {
-    secondInput.value--;
-  } else if (minuteInput.value != 0 && secondInput.value == 0) {
+  } else if (secondInput.value !== "0") {
+    secondInput.value -= 1;
+  } else if (minuteInput.value !== "0" && secondInput.value === "0") {
     secondInput.value = 59;
-    minuteInput.value--;
-  } else if (hourInput.value != 0 && minuteInput.value == 0) {
-    minuteInput.value = 60;
+    minuteInput.value -= 1;
+  } else if (hourInput.value !== "0" && minuteInput.value === "0") {
+    minuteInput.value = 59;
     hourInput.value--;
   }
 
-  if (minuteInput.value == 1 && secondInput.value == 0) {
-    var message = document.getElementById('message');
-    message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
-    
+  if (minuteInput.value === "1" && secondInput.value === "0") {
+    message.innerHTML = "<h2>There is 1 minute left </h2><br>" +
+      "<span>Time to wind down your speech</span>";
+
     if (isSoundOn) {
-      var audio = new Audio('./assets/audio/1-min.mp3');
+
       audio.play();
     }
   }
