@@ -4,7 +4,7 @@ body {
   font-weight: lighter;
   color: white;
   background-image: url("../images/carbonfiber.jpg");
-  background-size: calc(1yh);
+  background-size: cover;
   background-color: #222;
 }
 
