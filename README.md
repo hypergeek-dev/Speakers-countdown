@@ -1,28 +1,159 @@
-# Speakers-countdown
-A timer to help speakers in meetings keep track of shared time
+# Master of the Universe
+Master of the Universe is an interactive site that turns art into a game. By selecting the correct combination of images, the user is greeted with either a win screen with vibrant colours designed to bring joy, or a lose screen that asks them to try again. In this way, the user is given the chance to build up the drawing as they like.
+
+![Site view across devices](assets/images/images-readme/responsive-design.png)
+
+The Master of the Universe site is live, the links can be found [HERE](https://cluelessbiker.github.io/project2-master-universe/index.html)
+
+## Table of Contents
++ [UX](#ux "UX")
+  + [Site Purpose](#site-purpose "Site Purpose")
+  + [Site Goal](#site-goal "Site Goal")
+  + [Audience](#audience "Audience")
+  + [Communication](#communication "Communication")
+  + [Current User Goals](#current-user-goals "Current User Goals")
+  + [New User Goals](#new-user-goals "New User Goals")
++ [Design](#design "Design")
+  + [Colour Scheme](#colour-scheme "Colour Scheme")
+  + [Typography](#typography "Typography")
+  + [Imagery](#imagery "Imagery")
++ [Features](#features "Features")
+  + [Existing Features](#existing-features "Existing Features")
++ [Testing](#testing "Testing")
+  + [Validator Testing](#validator-testing "Validator Testing")
+  + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
++ [Technologies Used](#technologies-used "Technologies Used")
+  + [Main Languages Used](#main-languages-used "Main Languages Used")
+  + [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
++ [Deployment](#deployment "Deployment")
++ [Credits](#credits "Credits")
+  + [Content](#content "Content")
+  + [Media](#media "Media")
+
+## UX
+
+### Site Purpose:
+This code is for a timer that is designed to assist virtual meetings in managing the length of individual speeches. The timer is set up with input fields for hours, minutes, and seconds. The user can input the desired length of the speech, and then start the timer. Once the timer is started, the user can pause and reset the timer as needed.
+
+### Site Goal:
+To engage the users interests with vibrant design & fun images, and to keep them coming back to try again. 
+
+### Audience:
+Anyone & everyone with time to spare. The ideal user age is between 15-30 years of age.
+
+### Communication:
+With bold text & clearly defined buttons, the instructions of the game become clear upon visiting the site. However for those who need a little more guidance, an instructions window has also been added, to load upon request.
+
+### Current User Goals:
+To keep the user interested & engaged, trying again & again to get the correct combination of switches. With three switches, & three positions for each switch, the number of possible combinations is 27. 
+
+### New User Goals:
+To become instantly engaged with the design of the site, and feel intrigued to play along.
+
+### Future Goals:
+To add additional interactive playing fields so that the user can choose from a number of different scenarios. As well as to add the option to increase the level of difficulty.
+
+## Design
+
+### Wireframes:
+![Desktop wireframe](assets/images/images-readme/wireframe-fullscreen.png)
+![Smartphone wireframe](assets/images/images-readme/wireframe-smartphone.png)
+
+### Colour Scheme:
+Two colours were used in the creation of this site. The green tone matches the same green used in the default image of the planet Earth, and was used to tie the imagery to the text. A dark blue was also used, and chosen to mimic the imagined hue of the universe. The rest of the colours come from the images themselves, with additional colour being thrown at the user in a beautiful rainbow upon game win.
+![Colour Palette](assets/images/images-readme/colour-palette.png)
+
+### Typography:
+All fonts were obtained from the Google Fonts library. I chose the following three fonts for the page:
+1. Rubik Moonrocks - This is the main heading font, and it resembles the universe. It felt fitting to the design.
+2. Kanit - for the tagline. I wanted it to be easy to read.
+3. Grape Nuts - for the labels of the toggle switches & footer text. As it looks handwritten, it fits with the feel of the doodle/drawing that can be manipulated. It has also been used in the win/lose messages.
+4. Rubik Wet Paint - To give an eerie feel to the submit & reset buttons.
+
+### Imagery:
+All images used were created by me, and styled to give it the feel of an interactive colouring book.
+
+## Features
+
+### Existing Features:
+
+#### Landing Page:
+![Landing Page](assets/images/images-readme/landing-page.png)
 
 
-The Speaker Timer is a simple JavaScript app that helps speakers stay on track during Zoom meetings. It provides a countdown timer that displays the remaining time for the speaker's presentation and alerts the speaker when there is one minute left. This notification signals the speaker to wind down their speech.
+### Features Left to Implement
 
-###Usage
-To use the Speaker Timer, simply enter the desired presentation time in hours, minutes, and seconds. Then, click the Start button to begin the countdown timer. As the time elapses, the timer will update and display the remaining time. When there is one minute left, the app will display a message instructing the speaker to wind down their speech.
+## Testing
+Initial testing revealed a bug whereby you could press play several times and the countdown would then count irratic. I solved this by using an eventlistener.
+The rest of the process was dominated by styling issues and responsiveness until I reached the design I am using now.
 
-If the speaker needs more time, they can pause the timer by clicking the Pause button. When ready to resume, click the Resume button to continue the countdown from where it left off.
+### Validator Testing
+- html files pass through the [W3C validator](https://validator.w3.org/) with no issues found.
 
-If the speaker needs to reset the timer, they can do so by clicking the Reset button. This will stop the timer and reset it to the original time entered.
+![W3C validator message](assets/images/images-readme/validator-html.png)
 
-###Features
-Easy to use: Simply enter the desired presentation time and click the Start button.
-Countdown timer: Displays the remaining time for the speaker's presentation.
-Wind down notification: Alerts the speaker when there is one minute left in their presentation.
-Pause and Resume functionality: Allows the speaker to pause and resume the timer as needed.
-Reset functionality: Enables the speaker to reset the timer to the original time entered.
-Development
-The Speaker Timer is built with HTML, CSS, and JavaScript. It is a simple app that can be easily customized and extended to meet specific requirements.
+- CSS files pass through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
 
-To develop the Speaker Timer further, you can modify the CSS to change the look and feel of the app. You can also extend the JavaScript functionality to add more features, such as custom notifications or integration with other apps.
+![Jigsaw validator message](assets/images/images-readme/validator-css.png)
 
-###Testing
+- JS files pass through [JSHint](https://jshint.com/) with no issues found.
 
-###License
-The Speaker Timer is open-source software licensed under the MIT License. Feel free to use and modify the code to meet your needs. If you find any bugs or issues, please report them on the project's GitHub page.
+![JSHint overview](assets/images/images-readme/validator-js.png)
+
+- page has an excellent Accessibility rating in Lighthouse
+
+![Accessibility score](assets/images/images-readme/lighthouse-score.png)
+
+- Tested the site opens in Brave, Chrome & Safari without issues.
+- All links open to external pages as intended.
+
+### Unfixed Bugs
+
+## Technologies Used
+### Main Languages Used
+- HTML5
+- CSS3
+- Javascript
+
+### Frameworks, Libraries & Programs Used
+- Google Fonts - for the font families: 
+- Font Awesome - to add icons to the social links in the footer element.
+- GitPod - to create my html files & styling sheet before pushing the project to Github.
+- GitHub - to store my repository for submission.
+- Balsamiq - were used to create mockups of the project prior to starting.
+- Am I Responsive? - to ensure the project looked good across all devices.
+- Favicon - to provide the code & image for the icon in the tab bar.
+- Adobe Illustrator - to create the interactive artwork.
+
+## Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- The live link can be found [HERE - Master of the Universe](https://cluelessbiker.github.io/project2-master-universe/index.html)
+
+## Credits
+
+### Content
+Support was provided by my fellow student & friend [Mats](https://github.com/Pelikantapeten) by aiding me in bouncing off ideas & venting frustrations. They also provided immeasurable support when my brain was too tired to think straight, & helped me to work through my issues with a second set of eyes. I cannot thank them enough for being there for me.
+
+Also a huge thank you to my mentor, Martina T. who went above & beyond to give her time & energy, and was incredibly encouraging.
+
+Code for the HTML radio buttons & how to turn them into a toggle switch through CSS came from [Codepen](https://codepen.io/timtech/pen/ezRamp). A number of modifications were made, however the core structure is entirely credited to Codepen.
+
+Adding an event listener for radio buttons came from [Telusko](https://www.youtube.com/watch?v=r3Oc4IUP0XI)
+
+Adding an image element to the DOM [Stackoverflow](https://stackoverflow.com/questions/7802744/adding-an-img-element-to-a-div-with-javascript)
+
+Code for changing the image source in JS came from [DelftStack](https://www.delftstack.com/howto/javascript/change-image-src-javascript/#:~:text=Change%20the%20Source%20of%20an,image%20using%20the%20src%20property.)
+
+[StackOverflow](https://stackoverflow.com/questions/21166860/check-a-radio-button-with-javascript) showed me how to change which radio button is checked through JS.
+
+Instructions for adding a background image came from [W3Schools](https://www.w3schools.com/jsref/prop_style_backgroundimage.asp), as well as how to add background positioning [W3Schools](https://www.w3schools.com/jsref/prop_style_backgroundposition.asp)
+
+Information on deactivating an event listener after being clicked came from [Alvarotrigo](https://alvarotrigo.com/blog/disable-button-javascript/#:~:text=To%20disable%20a%20button%20using,disabled%20JavaScript%20property%20to%20false%20.), this feature was also implemented on the toggle switches.
+
+Changing the background colour of the toggle switches came from [BobbyHadz](https://bobbyhadz.com/blog/javascript-toggle-element-background-color-on-click).
+
+### Media
+- All artwork created by me.

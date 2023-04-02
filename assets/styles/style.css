@@ -24,7 +24,6 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.125);
   opacity: 70%;
   padding: 20px;
-
 }
 
 p {
@@ -74,8 +73,8 @@ span {
   to {
     text-shadow: 0 0 20px #cf5d1b, 0 0 30px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107, 0 0 70px #ffc107, 0 0 80px #ffc107, 0 0 90px #ffc107;
   }
+  
 }
-
 #container {
   display: flex;
   flex-direction: row;
