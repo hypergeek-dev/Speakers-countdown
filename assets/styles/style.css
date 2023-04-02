@@ -14,9 +14,9 @@ header {
   flex-direction: column;
   text-align: center;
   margin:0;
-  background-color: rgba(0, 0, 0, 0.5); /* set the background color with alpha value */
-  backdrop-filter: blur(1px); /* add blur effect to the background */
-  padding: 20px; /* add some padding to the header */
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(1px); 
+  padding: 20px; 
 }
 
 h1 {
