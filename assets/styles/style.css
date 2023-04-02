@@ -1,18 +1,20 @@
 body {
-  margin:0;
+
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
-  background-image: url("../images/carbonfiber.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../images/carbonfiber.png");
+  background-size:cover;
+  background-repeat: repeat-y;
   background-color: #222;
 }
+
 
 header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin:0;
   background-color: rgba(0, 0, 0, 0.5); /* set the background color with alpha value */
   backdrop-filter: blur(1px); /* add blur effect to the background */
   padding: 20px; /* add some padding to the header */
@@ -68,7 +70,7 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 80%;
+
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 black;
 }
 
