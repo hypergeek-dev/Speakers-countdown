@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-margin:0;
+  margin: 0;
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
@@ -16,26 +16,26 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin:0;
+  margin: 0;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(0, 0, 0, 0.75);
-width:100%;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.125);
   opacity: 70%;
-  padding: 20px; 
+  padding: 20px;
 
 }
 
 p {
-  margin-top:0;
+  margin-top: 0;
 }
 
 h1 {
   text-align: center;
   font-size: 7.5vw;
   -webkit-text-stroke: 2px #000000;
-  margin:0 0;
+  margin: 0 0;
 }
 
 h2 {
@@ -50,7 +50,7 @@ h4 {
   margin: 0;
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 black;
   letter-spacing: 0.2vw;
-  color:#868686;
+  color: #868686;
 }
 
 #message {
@@ -70,7 +70,7 @@ span {
   from {
     text-shadow: 0 0 10px #cf5d1b, 0 0 10px #cf5d1b, 0 0 20px #ffc107, 0 0 30px #ffc107, 0 0 40px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107;
   }
-  
+
   to {
     text-shadow: 0 0 20px #cf5d1b, 0 0 30px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107, 0 0 70px #ffc107, 0 0 80px #ffc107, 0 0 90px #ffc107;
   }
@@ -111,7 +111,7 @@ span {
 }
 
 .semicolon {
-padding-top: 12vh;
+  padding-top: 12vh;
   font-size: 2.5vw;
   align-self: center;
 }
@@ -127,8 +127,9 @@ padding-top: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
+
 .btn {
   font-size: 3.5vw;
   margin: 12px;
@@ -166,33 +167,35 @@ padding-top: 12vh;
     border: none;
     color: rgb(161, 161, 161);
     transition: 500ms;
-  } 
-  span {
-font-size: 1rem;
-  color:red;
-  -webkit-text-stroke:0;
-}
+  }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
-  margin: 0px;
-}
+  span {
+    font-size: 1rem;
+    color: red;
+    -webkit-text-stroke: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    margin: 0px;
+  }
+
   h2 {
-  font-size: 1.5rem;
-      color: rgb(255, 193, 7);
-      text-align: center;
-      animation: 1s ease-in-out 0s infinite alternate none running glow;
-    }
+    font-size: 1.5rem;
+    color: rgb(255, 193, 7);
+    text-align: center;
+    animation: 1s ease-in-out 0s infinite alternate none running glow;
+  }
 
   h4 {
-      margin: 0px;
-      text-shadow: rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px, black 1px 1px 0px;
-  
-  color: rgb(134, 134, 134);}
-}
+    margin: 0px;
+    text-shadow: rgb(0, 0, 0) -1px -1px 0px, rgb(0, 0, 0) 1px -1px 0px, rgb(0, 0, 0) -1px 1px 0px, black 1px 1px 0px;
 
+    color: rgb(134, 134, 134);
+  }
+}
 
 @media (min-width: 400px) {
   .label {
@@ -220,7 +223,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.5vw; 
+  font-size: 1.5vw;
 }
 
 footer a {
