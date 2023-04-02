@@ -4,8 +4,7 @@ body {
   font-weight: lighter;
   color: white;
   background-image: url("../images/carbonfiber.jpg");
-  background-size:cover;
-  background-repeat: repeat-y;
+  background-size: calc(1yh);
   background-color: #222;
 }
 
@@ -58,11 +57,11 @@ span {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+    text-shadow: 0 0 10px #cf5d1b, 0 0 10px #cf5d1b, 0 0 20px #ffc107, 0 0 30px #ffc107, 0 0 40px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107;
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ffc107, 0 0 40px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107, 0 0 70px #ffc107, 0 0 80px #ffc107;
+    text-shadow: 0 0 20px #cf5d1b, 0 0 30px #ffc107, 0 0 50px #ffc107, 0 0 60px #ffc107, 0 0 70px #ffc107, 0 0 80px #ffc107, 0 0 90px #ffc107;
   }
 }
 
@@ -164,6 +163,12 @@ button:hover {
   }
 }
 
+button:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
 @media only screen and (max-width: 400px) {
   .label {
     font-size: 3vw;
@@ -180,10 +185,9 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1vw;
+  margin-top: 15vh;
+
 }
-
-
 
 .time-group {
   display: flex;
@@ -193,14 +197,19 @@ button:hover {
 }
 
 footer {
-  position: fixed;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 10vh;
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: larger;
+  font-size: 1.5vw;
+  
 }
 
 footer a {
   display: inline-block;
   vertical-align: bottom;
+  text-decoration: none;
+  color: yellow;
 }
