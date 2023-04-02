@@ -80,6 +80,7 @@ function timer() {
     isTimerRunning = false;
 
     // Play notification sound
+    let audio = new Audio("./assets/audio/timeisup.mp3");
     if (isSoundOn) {
       audio.play();
     }
