@@ -15,7 +15,7 @@ let isSoundOn = true;
 
 startButton.addEventListener('click', function () {
   // Check if timer is already at 0:0:0
-  if (hourInput.value === 0 && minuteInput.value === 0 &&
+  if (hourInput.value === 0 && minuteInput.value === 0 && 
     secondInput.value === 0) {
     return;
   }
@@ -82,7 +82,7 @@ function timer() {
     }
 
     // Show message
-    let message = document.getElementById('message');
+   let message = document.getElementById('message');
     message.innerHTML = "<h2>Time is up!</h2>";
   } else if (secondInput.value !== 0) {
     secondInput.value--;
@@ -95,7 +95,7 @@ function timer() {
   }
 
   if (minuteInput.value == 1 && secondInput.value == 0) {
-    let message = document.getElementById('message');
+   let message = document.getElementById('message');
     message.innerHTML = "<h2>There is 1 minute left </h2><br> <span>Time to wind down your speech</span>";
 
     if (isSoundOn) {
