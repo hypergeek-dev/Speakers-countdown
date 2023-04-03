@@ -79,6 +79,12 @@ Only one image is used as wallpaper. Accreditation is further down.
 3. Ability to Reset to last preset time used.
 4. Ability to mute notification sound.
 
+## Notifications
+
+
+![There is one minute left!](assets/images/images-readme/not1.png)
+![Time is up!](assets/images/images-readme/not1.png)
+
 #### Landing Page:
 ![Landing Page](assets/images/images-readme/landing-page.png)
 
