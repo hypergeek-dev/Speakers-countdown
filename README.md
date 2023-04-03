@@ -42,7 +42,7 @@ To improve the quality of the meeting by assisting in time-management
 Anyone & everyone.
 
 ### Communication:
-With bold text & clearly defined buttons, the instructions of the aoo become clear upon visiting the site. 
+With bold text & clearly defined buttons, the use of the app become clear upon visiting the site. 
 
 ### Current User Goals:
 To stay beneficial as a tool. Usability is heightened through simplicity of use.
