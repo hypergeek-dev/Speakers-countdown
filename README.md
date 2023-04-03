@@ -81,9 +81,10 @@ Only one image is used as wallpaper. Accreditation is further down.
 
 ## Notifications
 
-
+There is one minute left!
 ![There is one minute left!](assets/images/images-readme/not1.png)
-![Time is up!](assets/images/images-readme/not1.png)
+Time is up!
+![Time is up!](assets/images/images-readme/not2.png)
 
 #### Landing Page:
 ![Landing Page](assets/images/images-readme/landing-page.png)
