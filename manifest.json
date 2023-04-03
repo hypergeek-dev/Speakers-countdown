@@ -1,0 +1,7 @@
+{
+    "name": "Speakers Timer",
+    "short_name": "Speakers Timer",
+    "theme_color": "#2c2c2c",
+    "background_color": "#ffffff",
+    "display": "standalone"
+  }
