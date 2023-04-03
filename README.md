@@ -1,5 +1,5 @@
 # Speakers Timer
-This app is designed to assist speakers doing online meetings
+This app is a timer designed to help speakers manage their time during virtual meetings.
 
 ![Site view across devices](assets/images/images-readme/responsive-design.png)
 
@@ -42,10 +42,10 @@ To improve the quality of the meeting by assisting in time-management
 Anyone & everyone.
 
 ### Communication:
-With bold text & clearly defined buttons, the use of the app become clear upon visiting the site. 
+The use of the app becomes clear upon visiting the site due to the chosen font and clearly defined buttons.. 
 
 ### Current User Goals:
-To stay beneficial as a tool. Usability is heightened through simplicity of use.
+The app's usability is enhanced by its simplicity.
 
 ### New User Goals:
 To become instantly engaged with the design of the site, and feel appealed to use the timer.
@@ -62,7 +62,7 @@ Can integrate with API on eg. zoom to be more interactive.
 
 ### Colour Scheme:
 I chose to use greyscale.
-![Colour Palette](assets/images/images-readme/colour-palette.png)
+![Colour Palette](assets/images/images-readme/colour-palette.png width="50%)
 
 ### Typography:
 All fonts were obtained from the Google Fonts library. I chose the following two fonts for the page:
