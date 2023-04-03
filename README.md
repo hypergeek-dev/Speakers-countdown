@@ -1,5 +1,5 @@
-# Master of the Universe
-Master of the Universe is an interactive site that turns art into a game. By selecting the correct combination of images, the user is greeted with either a win screen with vibrant colours designed to bring joy, or a lose screen that asks them to try again. In this way, the user is given the chance to build up the drawing as they like.
+# Speakers Timer
+This app is designed to assist speakers doing online meetings
 
 ![Site view across devices](assets/images/images-readme/responsive-design.png)
 
@@ -36,22 +36,23 @@ The Speakers timer site is live, the links can be found [HERE](https://hypergeek
 This code is for a timer that is designed to assist virtual meetings in managing the length of individual speeches. The timer is set up with input fields for hours, minutes, and seconds. The user can input the desired length of the speech, and then start the timer. Once the timer is started, the user can pause and reset the timer as needed.
 
 ### Site Goal:
-To engage the users interests with vibrant design & fun images, and to keep them coming back to try again. 
+To improve the quality of the meeting by assisting in time-management
 
 ### Audience:
-Anyone & everyone with time to spare. The ideal user age is between 15-30 years of age.
+Anyone & everyone.
 
 ### Communication:
-With bold text & clearly defined buttons, the instructions of the game become clear upon visiting the site. However for those who need a little more guidance, an instructions window has also been added, to load upon request.
+With bold text & clearly defined buttons, the instructions of the aoo become clear upon visiting the site. 
 
 ### Current User Goals:
-To keep the user interested & engaged, trying again & again to get the correct combination of switches. With three switches, & three positions for each switch, the number of possible combinations is 27. 
+To stay beneficial as a tool. Usability is heightened through simplicity of use.
 
 ### New User Goals:
-To become instantly engaged with the design of the site, and feel intrigued to play along.
+To become instantly engaged with the design of the site, and feel appealed to use the timer.
 
 ### Future Goals:
-To add additional interactive playing fields so that the user can choose from a number of different scenarios. As well as to add the option to increase the level of difficulty.
+Can be used in colaboration with other meeting tools as a full package
+Can integrate with API on eg. zoom to be more interactive. 
 
 ## Design
 
@@ -60,28 +61,27 @@ To add additional interactive playing fields so that the user can choose from a 
 ![Smartphone wireframe](assets/images/images-readme/wireframe-smartphone.png)
 
 ### Colour Scheme:
-Two colours were used in the creation of this site. The green tone matches the same green used in the default image of the planet Earth, and was used to tie the imagery to the text. A dark blue was also used, and chosen to mimic the imagined hue of the universe. The rest of the colours come from the images themselves, with additional colour being thrown at the user in a beautiful rainbow upon game win.
+I chose to use greyscale.
 ![Colour Palette](assets/images/images-readme/colour-palette.png)
 
 ### Typography:
-All fonts were obtained from the Google Fonts library. I chose the following three fonts for the page:
-1. Rubik Moonrocks - This is the main heading font, and it resembles the universe. It felt fitting to the design.
-2. Kanit - for the tagline. I wanted it to be easy to read.
-3. Grape Nuts - for the labels of the toggle switches & footer text. As it looks handwritten, it fits with the feel of the doodle/drawing that can be manipulated. It has also been used in the win/lose messages.
-4. Rubik Wet Paint - To give an eerie feel to the submit & reset buttons.
+All fonts were obtained from the Google Fonts library. I chose the following two fonts for the page:
+1. Days One
+2. Luckiest Guy
 
 ### Imagery:
-All images used were created by me, and styled to give it the feel of an interactive colouring book.
+Only one image is used as wallpaper. Accreditation is further down.
 
 ## Features
 
-### Existing Features:
+1. Timer with Hours, Minutes and Seconds.
+2. Ability to pause
+3. Ability to Reset to last preset time used.
+4. Ability to mute notification sound.
 
 #### Landing Page:
 ![Landing Page](assets/images/images-readme/landing-page.png)
 
-
-### Features Left to Implement
 
 ## Testing
 Initial testing revealed a bug whereby you could press play several times and the countdown would then count irratic. I solved this by using an eventlistener.
@@ -132,7 +132,7 @@ There are no unfixed errors.
 - GitHub - to store my repository for submission.
 - Balsamiq - were used to create mockups of the project prior to starting.
 - Am I Responsive? - to ensure the project looked good across all devices.
-- Favicon - to provide the code & image for the icon in the tab bar.
+- Font Awsome - to provide the code & image for the icon in the tab bar.
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -146,7 +146,7 @@ I like to thank Martina Terlević (https://www.linkedin.com/in/martinaterlevic/)
 ### Content
 All written content is created by me
 
-The buttons were found on
+The javascript and CSS for the buttons were found on
 https://dev.to/webdeasy/top-20-css-buttons-animations-f41
 and edited to own purpose
 
@@ -157,5 +157,3 @@ https://speechgen.io/
 
 The wallpaper was found on
 https://wallpapercave.com/
-
-- All artwork created by me.
