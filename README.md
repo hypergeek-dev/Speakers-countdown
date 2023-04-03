@@ -62,7 +62,7 @@ Can integrate with API on eg. zoom to be more interactive.
 
 ### Colour Scheme:
 I chose to use greyscale.
-![Colour Palette](assets/images/images-readme/colour-palette.png width="50%)
+![Colour Palette](assets/images/images-readme/colour-palette.png)
 
 ### Typography:
 All fonts were obtained from the Google Fonts library. I chose the following two fonts for the page:
