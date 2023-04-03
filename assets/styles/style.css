@@ -7,7 +7,7 @@ body {
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
-  background-image: url("../images/carbonfiber.wepl");
+  background-image: url("../images/carbonfiber.webp");
   background-size: cover;
   background-color: #222;
 }
@@ -140,7 +140,7 @@ span {
   justify-content: center;
   align-items: center;
   box-shadow: -2px -2px 2px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
-  font-family: 'Damion', cursive;
+  font-family: 'Luckiest guy', cursive;
   border: none;
   font-size: 1.5rem;
   color: rgb(161, 161, 161);
