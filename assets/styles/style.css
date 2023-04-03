@@ -7,7 +7,7 @@ body {
   font-family: 'Days One', sans-serif;
   font-weight: lighter;
   color: white;
-  background-image: url("../images/carbonfiber.jpg");
+  background-image: url("../images/carbonfiber.wepl");
   background-size: cover;
   background-color: #222;
 }
@@ -107,6 +107,7 @@ span {
   border: 1px solid #ccc;
   border-radius: 5px;
   color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .semicolon {

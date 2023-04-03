@@ -85,7 +85,7 @@ All images used were created by me, and styled to give it the feel of an interac
 
 ## Testing
 Initial testing revealed a bug whereby you could press play several times and the countdown would then count irratic. I solved this by using an eventlistener.
-The rest of the process was dominated by styling issues and responsiveness until I reached the design I am using now.
+That has been the only issue in Javascript. The issues that took most of my time was styling in CSS. 
 
 ### Validator Testing
 - html files pass through the [W3C validator](https://validator.w3.org/) with no issues found.
@@ -93,6 +93,14 @@ The rest of the process was dominated by styling issues and responsiveness until
 ![W3C validator message](assets/images/images-readme/validator-html.png)
 
 - CSS files pass through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
+<p>
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+         src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+         alt="Valid CSS!" />
+  </a>
+</p>
+
 
 ![Jigsaw validator message](assets/images/images-readme/validator-css.png)
 
@@ -109,6 +117,25 @@ The rest of the process was dominated by styling issues and responsiveness until
 
 ### Unfixed Bugs
 
+It has passed HTML and CSS validation
+
+The javascript has passed with no errors but found theese warnings: 
+
+1. Undeclared 'Audio'.
+let audio = new Audio("./assets/audio/1-min.mp3");
+83: 52. Move variable declaration to top of function or script.
+    let audio = new Audio("./assets/audio/timeisup.mp3");
+83: 93. Redefinition of 'audio' from line 10.
+    let audio = new Audio("./assets/audio/timeisup.mp3");
+83: 214. Undeclared 'Audio'.
+    let audio = new Audio("./assets/audio/timeisup.mp3");
+98: 205. Unexpected expression '--' in statement position.
+    hourInput.value--;
+107: 76. 'audio' is out of scope.
+      audio.play();
+
+I found that, since there is no errors, I will not change to code because of theese warnings. Some of the errors are also based on the structure of the code. It is easier to see context if I dont move the declarations to the top. 
+
 ## Technologies Used
 ### Main Languages Used
 - HTML5
@@ -123,37 +150,17 @@ The rest of the process was dominated by styling issues and responsiveness until
 - Balsamiq - were used to create mockups of the project prior to starting.
 - Am I Responsive? - to ensure the project looked good across all devices.
 - Favicon - to provide the code & image for the icon in the tab bar.
-- Adobe Illustrator - to create the interactive artwork.
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found [HERE - Master of the Universe](https://cluelessbiker.github.io/project2-master-universe/index.html)
+- The live link can be found [HERE - Master of the Universe](https://hypergeek-dev.github.io/Speakers-countdown/)
 
 ## Credits
 
 ### Content
-Support was provided by my fellow student & friend [Mats](https://github.com/Pelikantapeten) by aiding me in bouncing off ideas & venting frustrations. They also provided immeasurable support when my brain was too tired to think straight, & helped me to work through my issues with a second set of eyes. I cannot thank them enough for being there for me.
-
-Also a huge thank you to my mentor, Martina T. who went above & beyond to give her time & energy, and was incredibly encouraging.
-
-Code for the HTML radio buttons & how to turn them into a toggle switch through CSS came from [Codepen](https://codepen.io/timtech/pen/ezRamp). A number of modifications were made, however the core structure is entirely credited to Codepen.
-
-Adding an event listener for radio buttons came from [Telusko](https://www.youtube.com/watch?v=r3Oc4IUP0XI)
-
-Adding an image element to the DOM [Stackoverflow](https://stackoverflow.com/questions/7802744/adding-an-img-element-to-a-div-with-javascript)
-
-Code for changing the image source in JS came from [DelftStack](https://www.delftstack.com/howto/javascript/change-image-src-javascript/#:~:text=Change%20the%20Source%20of%20an,image%20using%20the%20src%20property.)
-
-[StackOverflow](https://stackoverflow.com/questions/21166860/check-a-radio-button-with-javascript) showed me how to change which radio button is checked through JS.
-
-Instructions for adding a background image came from [W3Schools](https://www.w3schools.com/jsref/prop_style_backgroundimage.asp), as well as how to add background positioning [W3Schools](https://www.w3schools.com/jsref/prop_style_backgroundposition.asp)
-
-Information on deactivating an event listener after being clicked came from [Alvarotrigo](https://alvarotrigo.com/blog/disable-button-javascript/#:~:text=To%20disable%20a%20button%20using,disabled%20JavaScript%20property%20to%20false%20.), this feature was also implemented on the toggle switches.
-
-Changing the background colour of the toggle switches came from [BobbyHadz](https://bobbyhadz.com/blog/javascript-toggle-element-background-color-on-click).
 
 ### Media
 - All artwork created by me.
