@@ -3,7 +3,7 @@ Master of the Universe is an interactive site that turns art into a game. By sel
 
 ![Site view across devices](assets/images/images-readme/responsive-design.png)
 
-The Master of the Universe site is live, the links can be found [HERE](https://cluelessbiker.github.io/project2-master-universe/index.html)
+The Speakers timer site is live, the links can be found [HERE](https://hypergeek-dev.github.io/Speakers-timer/)
 
 ## Table of Contents
 + [UX](#ux "UX")
@@ -117,24 +117,7 @@ That has been the only issue in Javascript. The issues that took most of my time
 
 ### Unfixed Bugs
 
-It has passed HTML and CSS validation
-
-The javascript has passed with no errors but found theese warnings: 
-
-1. Undeclared 'Audio'.
-let audio = new Audio("./assets/audio/1-min.mp3");
-83: 52. Move variable declaration to top of function or script.
-    let audio = new Audio("./assets/audio/timeisup.mp3");
-83: 93. Redefinition of 'audio' from line 10.
-    let audio = new Audio("./assets/audio/timeisup.mp3");
-83: 214. Undeclared 'Audio'.
-    let audio = new Audio("./assets/audio/timeisup.mp3");
-98: 205. Unexpected expression '--' in statement position.
-    hourInput.value--;
-107: 76. 'audio' is out of scope.
-      audio.play();
-
-I found that, since there is no errors, I will not change to code because of theese warnings. Some of the errors are also based on the structure of the code. It is easier to see context if I dont move the declarations to the top. 
+There are no unfixed errors. 
 
 ## Technologies Used
 ### Main Languages Used
@@ -156,11 +139,23 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-- The live link can be found [HERE - Master of the Universe](https://hypergeek-dev.github.io/Speakers-countdown/)
+- The live link can be found [HERE - Speakers Timer](https://hypergeek-dev.github.io/Speakers-timer/)
 
 ## Credits
-
+I like to thank Martina Terlević (https://www.linkedin.com/in/martinaterlevic/)
 ### Content
+All written content is created by me
+
+The buttons were found on
+https://dev.to/webdeasy/top-20-css-buttons-animations-f41
+and edited to own purpose
 
 ### Media
+The verbal notification is created using
+Text to speech, using this site:
+https://speechgen.io/
+
+The wallpaper was found on
+https://wallpapercave.com/
+
 - All artwork created by me.
